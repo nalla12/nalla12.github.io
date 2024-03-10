@@ -4,9 +4,37 @@ export default function MenuAccordion() {
     const defaultContent =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
+    const menuItems = [
+        {
+            title: 'Hvem',
+            subtitle: 'er jeg?',
+            content: defaultContent
+        },
+        {
+            title: 'Hvilke',
+            subtitle: 'teknologier kan jeg?',
+            content: defaultContent
+        },
+        {
+            title: 'Hvad',
+            subtitle: 'har jeg udviklet?',
+            content: defaultContent
+        },
+        {
+            title: 'Hvor',
+            subtitle: 'kan jeg kontaktes?',
+            content: defaultContent
+        }
+    ];
+
     return (
         <Accordion
             className='max-w-screen-md mx-auto'
+            itemClasses={{
+                subtitle: 'ml-2 text-lg',
+                title: 'inline text-4xl text-amber-400',
+                titleWrapper: 'flex-row items-end'
+            }}
             motionProps={{
                 variants: {
                     enter: {
@@ -44,15 +72,15 @@ export default function MenuAccordion() {
                 },
             }}
         >
-            <AccordionItem key="1" aria-label="Hvem?" title="Hvem?">
-                {defaultContent}
-            </AccordionItem>
-            <AccordionItem key="2" aria-label="Hvad?" title="Hvad?">
-                {defaultContent}
-            </AccordionItem>
-            <AccordionItem key="3" aria-label="Hvor?" title="Hvor?">
-                {defaultContent}
-            </AccordionItem>
+            {menuItems.map((item, index) => (
+                <AccordionItem key={index}
+                    aria-label={item.title}
+                    title={item.title}
+                    subtitle={item.subtitle}
+                >
+                    {item.content}
+                </AccordionItem>
+            ))}
         </Accordion>
     );
 }
