@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+// NextUI color vars are in hsl!
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
     color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
+    color: hsl(var(--nextui-foreground));
+    background-color: hsl(var(--nextui-background));
     //background-color: #242424;
-    background-color: #01061e;
+    //background-color: #050a1f;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -28,10 +31,11 @@ body {
 }
 
 div#root {
-    max-width: 1280px;
+    //max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    width: 100vw;
 }
 
 a {
@@ -45,7 +49,7 @@ a:hover {
 }
 
 h1 {
-    color: #decdc0;
+    color: hsl(var(--nextui-foreground));
     font-size: 3.2em;
     line-height: 1.1;
 }
