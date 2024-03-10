@@ -6,6 +6,7 @@ export default function MenuAccordion() {
 
     return (
         <Accordion
+            className='max-w-screen-md mx-auto'
             motionProps={{
                 variants: {
                     enter: {
@@ -43,7 +44,7 @@ export default function MenuAccordion() {
                 },
             }}
         >
-            <AccordionItem key="1" aria-label="Hvem?" title="Hvem?" className="bg-amber-600">
+            <AccordionItem key="1" aria-label="Hvem?" title="Hvem?">
                 {defaultContent}
             </AccordionItem>
             <AccordionItem key="2" aria-label="Hvad?" title="Hvad?">
