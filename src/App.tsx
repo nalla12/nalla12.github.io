@@ -1,12 +1,10 @@
-import './styles/App.scss'
 import MenuAccordion from './components/MenuAccordion.tsx';
 
-
 function App() {
-    return (<>
-        <h1>Allan Duong</h1>
+    return (<div className='max-w-screen-lg mx-auto px-12 py-6'>
+        <h1 className='text-right'>Allan Duong's website</h1>
         <MenuAccordion />
-    </>)
+    </div>)
 }
 
 export default App

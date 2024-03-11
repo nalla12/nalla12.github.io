@@ -1,5 +1,6 @@
-import {Accordion, AccordionItem} from '@nextui-org/react';
 import {useState} from 'react';
+import {Accordion, AccordionItem} from '@nextui-org/react';
+import styles from '../styles/app.module.scss';
 
 export default function MenuAccordion() {
     const [itemInFocus, setItemInFocus] = useState<undefined | number>();
@@ -29,50 +30,50 @@ export default function MenuAccordion() {
             content: defaultContent
         }
     ];
+    const motionProps = {
+        variants: {
+            enter: {
+                y: 0,
+                opacity: 1,
+                height: 'auto',
+                transition: {
+                    height: {
+                        type: 'spring',
+                        stiffness: 500,
+                        damping: 30,
+                        duration: 1.5,
+                    },
+                    opacity: {
+                        easings: 'ease',
+                        duration: 0.6,
+                    },
+                },
+            },
+            exit: {
+                y: 0,
+                opacity: 0,
+                height: 0,
+                transition: {
+                    height: {
+                        easings: 'ease',
+                        duration: 0.2,
+                    },
+                    opacity: {
+                        easings: 'ease',
+                        duration: 0.3,
+                    },
+                },
+            },
+        }
+    };
 
     return (
         <Accordion
-            className='max-w-screen-md mx-auto'
+            className='max-w-full mx-auto p-0'
             itemClasses={{
-                subtitle: 'ml-2 text-lg',
-                titleWrapper: 'flex-row items-end'
+                titleWrapper: 'md:flex-row md:items-end'
             }}
-            motionProps={{
-                variants: {
-                    enter: {
-                        y: 0,
-                        opacity: 1,
-                        height: 'auto',
-                        transition: {
-                            height: {
-                                type: 'spring',
-                                stiffness: 500,
-                                damping: 30,
-                                duration: 1,
-                            },
-                            opacity: {
-                                easings: 'ease',
-                                duration: 1,
-                            },
-                        },
-                    },
-                    exit: {
-                        y: -10,
-                        opacity: 0,
-                        height: 0,
-                        transition: {
-                            height: {
-                                easings: 'ease',
-                                duration: 0.25,
-                            },
-                            opacity: {
-                                easings: 'ease',
-                                duration: 0.3,
-                            },
-                        },
-                    },
-                },
-            }}
+            motionProps={motionProps}
         >
             {menuItems.map((item, index) => (
                 <AccordionItem key={index}
@@ -80,10 +81,10 @@ export default function MenuAccordion() {
                     title={item.title}
                     subtitle={item.subtitle}
                     onFocus={() => setItemInFocus(index)}
+                    className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
-                        title: itemInFocus === index
-                            ? 'text-amber-400 inline text-4xl'
-                            : 'inline text-4xl'
+                        subtitle: 'accordion-subtitle md:ml-3 text-2xl md:text-4xl',
+                        title: `${styles.strokedTitle} ${styles.box} font-extrabold text-5xl md:text-6xl lg:text-8xl tracking-wider uppercase ${itemInFocus === index && 'text-yellow-500'}`
                     }}
                 >
                     {item.content}
