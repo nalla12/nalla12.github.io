@@ -83,8 +83,8 @@ export default function MenuAccordion() {
                     onFocus={() => setItemInFocus(index)}
                     className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
-                        subtitle: 'accordion-subtitle md:ml-3 text-2xl md:text-4xl',
-                        title: `${styles.strokedTitle} ${styles.box} font-extrabold text-5xl md:text-6xl lg:text-8xl tracking-wider uppercase ${itemInFocus === index && 'text-yellow-500'}`
+                        subtitle: `${styles.subTitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
+                        title: `${styles.strokeTitle} ${styles.bgColor} font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase`
                     }}
                 >
                     {item.content}
@@ -93,3 +93,4 @@ export default function MenuAccordion() {
         </Accordion>
     );
 }
+// ${itemInFocus === index && 'text-yellow-500'}
