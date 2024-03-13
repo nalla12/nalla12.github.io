@@ -1,10 +1,7 @@
-import {useState} from 'react';
 import {Accordion, AccordionItem} from '@nextui-org/react';
 import styles from '../styles/app.module.scss';
 
 export default function MenuAccordion() {
-    const [itemInFocus, setItemInFocus] = useState<undefined | number>();
-
     const defaultContent =
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
@@ -80,7 +77,6 @@ export default function MenuAccordion() {
                     aria-label={item.title}
                     title={item.title}
                     subtitle={item.subtitle}
-                    onFocus={() => setItemInFocus(index)}
                     className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
                         subtitle: `${styles.subTitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
