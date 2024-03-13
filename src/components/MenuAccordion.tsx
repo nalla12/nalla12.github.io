@@ -42,18 +42,18 @@ export default function MenuAccordion() {
                     },
                     opacity: {
                         easings: 'ease',
-                        duration: 0.6,
+                        duration: 1,
                     },
                 },
             },
             exit: {
-                y: 0,
+                y: -20,
                 opacity: 0,
                 height: 0,
                 transition: {
                     height: {
                         easings: 'ease',
-                        duration: 0.2,
+                        duration: 0.25,
                     },
                     opacity: {
                         easings: 'ease',
@@ -71,6 +71,7 @@ export default function MenuAccordion() {
                 titleWrapper: 'md:flex-row md:items-end'
             }}
             motionProps={motionProps}
+            showDivider={false}
         >
             {menuItems.map((item, index) => (
                 <AccordionItem key={index}
@@ -79,9 +80,12 @@ export default function MenuAccordion() {
                     subtitle={item.subtitle}
                     className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
+                        indicator: 'text-4xl text-primary',
                         subtitle: `${styles.subtitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
                         title: `${styles.strokeTitle} ${styles.strokeTitleBg} font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase`
                     }}
+                    disableIndicatorAnimation={true}
+                    indicator={({ isOpen }) => (isOpen ? <>-</> : <>+</>)}
                 >
                     {item.content}
                 </AccordionItem>
