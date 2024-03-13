@@ -74,12 +74,12 @@ export default function MenuAccordion() {
         >
             {menuItems.map((item, index) => (
                 <AccordionItem key={index}
-                    aria-label={item.title}
+                    aria-label={`${item.title} ${item.subtitle}`}
                     title={item.title}
                     subtitle={item.subtitle}
                     className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
-                        subtitle: `${styles.subTitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
+                        subtitle: `${styles.subtitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
                         title: `${styles.strokeTitle} ${styles.strokeTitleBg} font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase`
                     }}
                 >
@@ -89,4 +89,3 @@ export default function MenuAccordion() {
         </Accordion>
     );
 }
-// ${itemInFocus === index && 'text-yellow-500'}
