@@ -84,7 +84,7 @@ export default function MenuAccordion() {
                     className={`[&_button]:px-0 ${styles.btnWrapper}`}
                     classNames={{
                         subtitle: `${styles.subTitle} accordion-subtitle md:ml-3 text-2xl md:text-4xl`,
-                        title: `${styles.strokeTitle} ${styles.bgColor} font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase`
+                        title: `${styles.strokeTitle} ${styles.strokeTitleBg} font-extrabold text-5xl md:text-7xl lg:text-8xl tracking-wider uppercase`
                     }}
                 >
                     {item.content}
