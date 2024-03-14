@@ -11,7 +11,9 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@mdx-js/rollup": "^3.0.1",
         "@nextui-org/react": "^2.2.10",
+        "@types/mdx": "^2.0.11",
         "framer-motion": "^11.0.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"

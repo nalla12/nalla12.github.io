@@ -18,12 +18,11 @@ module.exports = {
             themes: {
                 dark: {
                     colors: {
-                        background: '#090d1e',
+                        background: '#06091a',
                         foreground: '#FFFFFFDD',
                         link: '#e89a5c',
-                        primary: '#decdc0',
-                        text: '#FFFFFFDD',
-                        heading: '#FFFFFFDD'
+                        primary: '#eea44a',
+                        secondary: '#e09617'
                     }
                 },
                 light: {
@@ -31,9 +30,8 @@ module.exports = {
                         background: '#050a1f',
                         foreground: '#FFFFFFDD',
                         link: '#e89a5c',
-                        primary: '#decdc0',
-                        text: '#FFFFFFDD',
-                        heading: '#FFFFFFDD'
+                        primary: '#eea44a',
+                        secondary: '#e09617'
                     }
                 }
             }
