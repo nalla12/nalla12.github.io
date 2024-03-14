@@ -1,31 +1,31 @@
 import {Accordion, AccordionItem} from '@nextui-org/react';
 import styles from '../styles/app.module.scss';
-import WhoContent from '../contents/Who.mdx';
-import WhichContent from '../contents/Which.mdx';
-import WhatContent from '../contents/What.mdx';
-import WhereContent from '../contents/Where.mdx';
+import WhoContentDa from '../contents/da/Who.mdx';
+import WhichContentDa from '../contents/da/Which.mdx';
+import WhatContentDa from '../contents/da/What.mdx';
+import WhereContentDa from '../contents/da/Where.mdx';
 
 export default function MenuAccordion() {
     const menuItems = [
         {
             title: 'Hvem',
             subtitle: 'er jeg?',
-            content: <WhoContent />
+            content: <WhoContentDa />
         },
         {
             title: 'Hvilke',
-            subtitle: 'teknologier kan jeg?',
-            content: <WhichContent />
+            subtitle: 'kompetencer har jeg?',
+            content: <WhichContentDa />
         },
         {
             title: 'Hvad',
             subtitle: 'har jeg udviklet?',
-            content: <WhatContent />
+            content: <WhatContentDa />
         },
         {
             title: 'Hvor',
             subtitle: 'kan jeg kontaktes?',
-            content: <WhereContent />
+            content: <WhereContentDa />
         }
     ];
     const motionProps = {
