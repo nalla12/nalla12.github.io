@@ -1,33 +1,13 @@
+import {ReactNode} from 'react';
 import {Accordion, AccordionItem} from '@nextui-org/react';
 import styles from '../styles/app.module.scss';
-import WhoContentDa from '../contents/da/Who.mdx';
-import WhichContentDa from '../contents/da/Which.mdx';
-import WhatContentDa from '../contents/da/What.mdx';
-import WhereContentDa from '../contents/da/Where.mdx';
 
-export default function MenuAccordion() {
-    const menuItems = [
-        {
-            title: 'Hvem',
-            subtitle: 'er jeg?',
-            content: <WhoContentDa />
-        },
-        {
-            title: 'Hvilke',
-            subtitle: 'kompetencer har jeg?',
-            content: <WhichContentDa />
-        },
-        {
-            title: 'Hvad',
-            subtitle: 'har jeg udviklet?',
-            content: <WhatContentDa />
-        },
-        {
-            title: 'Hvor',
-            subtitle: 'kan jeg kontaktes?',
-            content: <WhereContentDa />
-        }
-    ];
+interface AccordionData {
+    title: string,
+    subtitle: string,
+    content: ReactNode
+}
+export default function MenuAccordion({data}: {data: AccordionData[]}) {
     const motionProps = {
         variants: {
             enter: {
@@ -74,7 +54,7 @@ export default function MenuAccordion() {
             motionProps={motionProps}
             showDivider={false}
         >
-            {menuItems.map((item, index) => (
+            {data.map((item, index) => (
                 <AccordionItem key={index}
                     aria-label={`${item.title} ${item.subtitle}`}
                     title={item.title}

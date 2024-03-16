@@ -22,7 +22,7 @@ module.exports = {
                         foreground: '#FFFFFFDD',
                         link: '#e89a5c',
                         primary: '#eea44a',
-                        secondary: '#e09617'
+                        secondary: '#ce8c19'
                     }
                 },
                 light: {
@@ -31,7 +31,7 @@ module.exports = {
                         foreground: '#FFFFFFDD',
                         link: '#e89a5c',
                         primary: '#eea44a',
-                        secondary: '#e09617'
+                        secondary: '#ce8c19'
                     }
                 }
             }
