@@ -1,6 +1,6 @@
 import MenuAccordion from './components/MenuAccordion.tsx';
 import WhoContentDa from './data/mainContent/da/Who.mdx';
-import WhichContentDa from './data/mainContent/da/Which.mdx';
+import WhichContentDa, {meta} from './data/mainContent/da/Which.mdx';
 import WhatContentDa from './data/mainContent/da/What.mdx';
 import WhereContentDa from './data/mainContent/da/Where.mdx';
 import WhoContentEn from './data/mainContent/en/Who.mdx';
@@ -8,8 +8,11 @@ import WhichContentEn from './data/mainContent/en/Which.mdx';
 import WhatContentEn from './data/mainContent/en/What.mdx';
 import WhereContentEn from './data/mainContent/en/Where.mdx';
 import Header from './components/Header.tsx';
+import WorkCard from './components/WorkCard.tsx';
 
 function App({className}: {className: string}) {
+    console.log(meta.title, meta.subtitle);
+
     const lang = 'da';
     const data = {
         da: [
@@ -26,7 +29,7 @@ function App({className}: {className: string}) {
             {
                 title: 'Hvad',
                 subtitle: 'har jeg udviklet?',
-                content: <WhatContentDa />
+                content: <WhatContentDa components={{WorkCard}} />
             },
             {
                 title: 'Hvor',
