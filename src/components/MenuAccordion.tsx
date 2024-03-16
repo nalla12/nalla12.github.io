@@ -51,6 +51,7 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
             itemClasses={{
                 titleWrapper: 'md:flex-row md:items-end'
             }}
+            keepContentMounted={true}
             motionProps={motionProps}
             showDivider={false}
         >
