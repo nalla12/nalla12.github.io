@@ -13,7 +13,7 @@
 
     line-height: 1.5;
 
-    color-scheme: light dark;
+    //color-scheme: light dark;
     color: hsl(var(--nextui-foreground));
     background-color: hsl(var(--nextui-background));
     //background-color: #242424;
@@ -83,6 +83,7 @@ ul {
     padding: revert;
 }
 
+/*
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
@@ -93,3 +94,4 @@ ul {
         color: #747bff;
     }
 }
+*/
