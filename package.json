@@ -1,5 +1,5 @@
 {
-    "name": "untitled",
+    "name": "aldu.dk",
     "private": true,
     "version": "0.0.0",
     "type": "module",
@@ -19,6 +19,7 @@
     },
     "devDependencies": {
         "@types/mdx": "^2.0.11",
+        "@types/node": "^20.11.28",
         "@types/react": "^18.2.64",
         "@types/react-dom": "^18.2.21",
         "@typescript-eslint/eslint-plugin": "^7.1.1",
