@@ -49,7 +49,6 @@ Error generating stack: `+o.message+`
 `,M.jsxs(t.p,{children:[M.jsx(t.br,{}),`
 `,`Mine spidskompetencer er moderne front-end webudvikling med React, JavaScript/TypeScript, HTML og CSS.
 Jeg har fokus på tør og ren kode, men lækkert UI design, som er brugervenligt, responsivt og intuitivt at bruge uden unødige klik.`]}),`
-`,e.pdfUrl,`
 `,M.jsxs(t.p,{children:[M.jsx(t.br,{}),`
 `,M.jsx("a",{href:e.pdfUrl,target:"_blank",children:"Hent mit CV (PDF)"})]})]})}function vE(e={}){const{wrapper:t}=e.components||{};return t?M.jsx(t,{...e,children:M.jsx(ah,{...e})}):ah(e)}const uh={title:"Hvilke",subtitle:"kompetencer har jeg?"};function ch(e){const t={h3:"h3",li:"li",ul:"ul",...e.components};return M.jsxs(M.Fragment,{children:[M.jsx(t.h3,{children:"Programmering"}),`
 `,M.jsxs(t.ul,{children:[`
