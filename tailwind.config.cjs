@@ -20,7 +20,7 @@ module.exports = {
                     colors: {
                         background: '#050b26',
                         foreground: '#FFFFFFDD',
-                        link: '#e89a5c',
+                        link: '#64b9ff',
                         primary: '#eea44a',
                         secondary: '#ce8c19'
                     }
@@ -29,7 +29,7 @@ module.exports = {
                     colors: {
                         background: '#050a1f',
                         foreground: '#FFFFFFDD',
-                        link: '#e89a5c',
+                        link: '#64b9ff',
                         primary: '#eea44a',
                         secondary: '#ce8c19'
                     }
