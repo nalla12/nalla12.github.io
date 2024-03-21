@@ -8,8 +8,8 @@ import * as WhatContentEn from './en/What.mdx';
 import * as WhereContentEn from './en/Where.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
 import WorkCard from '@/components/WorkCard.tsx';
-import Rating from '@/components/Rating.tsx';
 import Dots from '@/components/Dots.tsx';
+import Rating from '@/components/Rating.tsx';
 
 export default {
     da: [
