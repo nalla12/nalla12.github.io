@@ -50,9 +50,6 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
     return (
         <Accordion
             className='max-w-full mx-auto p-0'
-            itemClasses={{
-                titleWrapper: 'sm:flex-row sm:items-end'
-            }}
             keepContentMounted={true}
             motionProps={motionProps}
             showDivider={false}
@@ -64,9 +61,11 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
                     subtitle={item.subtitle}
                     className={`${styles.btnWrapper} [&_button]:px-0 *:m-0`}
                     classNames={{
+                        content: 'py-4',
                         indicator: 'text-4xl text-primary -mt-2',
                         subtitle: `${styles.subtitle} accordion-subtitle sm:mt-0 sm:ml-3 text-2xl sm:text-4xl`,
-                        title: `${styles.strokeTitle} ${styles.strokeTitleBg} font-extrabold text-5xl sm:text-7xl lg:text-8xl tracking-wider uppercase`
+                        title: `${styles.strokeTitle} ${styles.strokeTitleBg} font-extrabold text-5xl sm:text-7xl lg:text-8xl tracking-wider uppercase`,
+                        titleWrapper: 'sm:flex-row sm:items-end'
                     }}
                     disableIndicatorAnimation={true}
                     indicator={({ isOpen }) => (isOpen ? <>-</> : <>+</>)}
