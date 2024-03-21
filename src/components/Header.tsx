@@ -4,7 +4,7 @@ export default function Header() {
         <div className='text-right'>
             {/*<SmallButton>DA</SmallButton>*/}
             {/*<SmallButton>EN</SmallButton>*/}
-            <h1 className='mb-3 text-3xl md:text-5xl lg:text-6xl text-secondary'>aldu</h1>
+            <h1 className='mb-3 text-3xl sm:text-4xl lg:text-5xl text-secondary'>aldu</h1>
         </div>
     </header>)
 }

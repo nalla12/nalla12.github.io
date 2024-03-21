@@ -9,11 +9,12 @@ import * as WhereContentEn from './en/Where.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
 import WorkCard from '@/components/WorkCard.tsx';
 import Rating from '@/components/Rating.tsx';
+import Dots from '@/components/Dots.tsx';
 
 export default {
     da: [
         {title: WhoContentDa.meta.title, subtitle: WhoContentDa.meta.subtitle, content: <WhoContentDa.default pdfUrl={pdfUrl} />},
-        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default components={{Rating}} />},
+        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default components={{Rating, Dots}} />},
         {title: WhatContentDa.meta.title, subtitle: WhatContentDa.meta.subtitle, content: <WhatContentDa.default components={{WorkCard}} />},
         {title: WhereContentDa.meta.title, subtitle: WhereContentDa.meta.subtitle, content: <WhereContentDa.default />}
     ],
