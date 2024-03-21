@@ -11,8 +11,8 @@ export default function Rating({children}: {children: string}) {
             endContent={<Dots count={count} />}
             variant="flat"
             classNames={{
-                base: 'bg-gradient-to-br from-blue-700 to-purple-700 border-small border-white/50 shadow-pink-500/30 mb-2',
-                content: 'drop-shadow shadow-black text-white text-lg empty:pl-0',
+                base: 'bg-gradient-to-br from-blue-700 to-purple-700 border-small border-white/50 mb-2',
+                content: 'drop-shadow shadow-black text-white text-lg pr-2 empty:px-0',
             }}
         >
             {title}
