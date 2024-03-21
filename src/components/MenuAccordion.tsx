@@ -62,7 +62,7 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
                     aria-label={`${item.title} ${item.subtitle}`}
                     title={item.title}
                     subtitle={item.subtitle}
-                    className={`[&_button]:px-0 ${styles.btnWrapper}`}
+                    className={`${styles.btnWrapper} [&_button]:px-0 *:m-0`}
                     classNames={{
                         indicator: 'text-4xl text-primary -mt-2',
                         subtitle: `${styles.subtitle} accordion-subtitle sm:mt-0 sm:ml-3 text-2xl sm:text-4xl`,

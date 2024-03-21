@@ -6,13 +6,14 @@ import * as WhoContentEn from './en/Who.mdx';
 import * as WhichContentEn from './en/Which.mdx';
 import * as WhatContentEn from './en/What.mdx';
 import * as WhereContentEn from './en/Where.mdx';
-import WorkCard from '@/components/WorkCard.tsx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
+import WorkCard from '@/components/WorkCard.tsx';
+import Rating from '@/components/Rating.tsx';
 
 export default {
     da: [
         {title: WhoContentDa.meta.title, subtitle: WhoContentDa.meta.subtitle, content: <WhoContentDa.default pdfUrl={pdfUrl} />},
-        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default />},
+        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default components={{Rating}} />},
         {title: WhatContentDa.meta.title, subtitle: WhatContentDa.meta.subtitle, content: <WhatContentDa.default components={{WorkCard}} />},
         {title: WhereContentDa.meta.title, subtitle: WhereContentDa.meta.subtitle, content: <WhereContentDa.default />}
     ],
