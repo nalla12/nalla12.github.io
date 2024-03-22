@@ -8,13 +8,13 @@ import * as WhatContentEn from './en/What.mdx';
 import * as WhereContentEn from './en/Where.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
 import Dots from '@/components/Dots.tsx';
-import Rating from '@/components/Rating.tsx';
-import Project from '@/components/Projects/Project.tsx';
+import Tag from '@/components/Tag.tsx';
+import Project from '@/components/Project.tsx';
 
 export default {
     da: [
         {title: WhoContentDa.meta.title, subtitle: WhoContentDa.meta.subtitle, content: <WhoContentDa.default pdfUrl={pdfUrl} />},
-        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default components={{Rating, Dots}} />},
+        {title: WhichContentDa.meta.title, subtitle: WhichContentDa.meta.subtitle, content: <WhichContentDa.default components={{Rating: Tag, Dots}} />},
         {title: WhatContentDa.meta.title, subtitle: WhatContentDa.meta.subtitle, content: <WhatContentDa.default components={{Project}} />},
         {title: WhereContentDa.meta.title, subtitle: WhereContentDa.meta.subtitle, content: <WhereContentDa.default />}
     ],
