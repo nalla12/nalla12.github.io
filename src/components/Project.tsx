@@ -18,8 +18,8 @@ export default function Project(props: Props) {
         <Card className='bg-blue-950/60 border-1 border-blue-900 max-w-xl mb-5 px-3 py-1 rounded-3xl'>
             <CardHeader className="flex flex-col gap-3 items-start pb-0">
                 <div className="flex flex-row gap-2 align-bottom justify-between w-full">
-                    <p className="text-3xl">{props.title}</p>
-                    <p className="text-xl text-default-500">{props.subtitle}</p>
+                    <p className="text-xl sm:text-3xl">{props.title}</p>
+                    <p className="text-sm sm:text-xl text-default-500">{props.subtitle}</p>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-2 w-full">
                     {technologies?.map((item) => (
@@ -29,9 +29,11 @@ export default function Project(props: Props) {
                     ))}
                 </div>
             </CardHeader>
+
             <CardBody>
                 <div>{props.children}</div>
             </CardBody>
+
             {props.link && <>
                 <CardFooter>
                     <Link
