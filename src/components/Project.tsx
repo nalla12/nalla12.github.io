@@ -15,7 +15,7 @@ export default function Project(props: Props) {
     // Year, platform, libraries, framework
 
     return (<>
-        <Card className='bg-blue-950/60 border-1 border-blue-900 max-w-xl mb-5 px-3 py-1 rounded-3xl'>
+        <Card className='bg-blue-950/60 border-1 border-blue-900 px-3 py-1 rounded-3xl'>
             <CardHeader className="flex flex-col gap-3 items-start pb-0">
                 <div className="flex flex-row gap-2 align-bottom justify-between w-full">
                     <p className="text-xl sm:text-3xl">{props.title}</p>
