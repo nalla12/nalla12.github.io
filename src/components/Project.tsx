@@ -21,7 +21,7 @@ export default function Project(props: Props) {
                     <p className="text-xl sm:text-3xl">{props.title}</p>
                     <p className="text-sm sm:text-xl text-default-500">{props.subtitle}</p>
                 </div>
-                <div className="flex flex-wrap gap-2 w-full">
+                <div className="flex flex-wrap gap-1.5 w-full">
                     {technologies?.map((item) => (
                         <Tag key={item} classNameContent="text-md">
                             {item}
