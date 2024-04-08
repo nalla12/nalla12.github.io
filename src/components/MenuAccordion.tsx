@@ -1,6 +1,8 @@
 import {ReactNode} from 'react';
 import {Accordion, AccordionItem} from '@nextui-org/react';
 import styles from '../styles/app.module.scss';
+import { BiPlus } from 'react-icons/bi';
+import { BiMinus } from 'react-icons/bi';
 
 interface AccordionData {
     title: string,
@@ -68,7 +70,7 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
                         titleWrapper: 'sm:flex-row sm:items-end'
                     }}
                     disableIndicatorAnimation={true}
-                    indicator={({ isOpen }) => (isOpen ? <>-</> : <>+</>)}
+                    indicator={({ isOpen }) => (isOpen ? <BiMinus /> : <BiPlus />)}
                 >
                     {/*<item.content />*/}
                     {item.content}

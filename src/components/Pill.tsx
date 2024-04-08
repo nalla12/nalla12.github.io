@@ -7,7 +7,7 @@ interface Props {
     children: string,
 }
 
-export default function Tag(props: Props) {
+export default function Pill(props: Props) {
     const data = props.children.split('::').map(item => item.trim());
     const title = data[0];
     const count = Number(data[1]);

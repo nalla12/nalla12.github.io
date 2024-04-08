@@ -1,6 +1,6 @@
 import {ReactNode} from 'react';
 import {Card, CardBody, CardFooter, CardHeader, Link} from '@nextui-org/react';
-import Tag from '@/components/Tag.tsx';
+import Pill from '@/components/Pill.tsx';
 
 interface Props {
     title: string,
@@ -23,9 +23,9 @@ export default function Project(props: Props) {
                 </div>
                 <div className="flex flex-wrap gap-1.5 w-full">
                     {technologies?.map((item) => (
-                        <Tag key={item} classNameContent="text-md">
+                        <Pill key={item} classNameContent="text-md">
                             {item}
-                        </Tag>
+                        </Pill>
                     ))}
                 </div>
             </CardHeader>

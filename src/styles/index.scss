@@ -27,8 +27,8 @@ div.app {
     align-content: center;
     display: flex;
     flex-flow: column nowrap;
-    margin: 0 auto;
     height: 100vh;
+    margin: 0 auto;
     max-width: 1024px;
 }
 
@@ -43,13 +43,14 @@ main {
 }
 
 a {
-    font-weight: 500;
     color: hsl(var(--nextui-primary));
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    color: lightskyblue;
+    border-bottom: 1px solid;
+    color: theme('colors.blue.300');
 }
 
 h1 {
