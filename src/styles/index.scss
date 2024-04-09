@@ -5,18 +5,20 @@
 // NextUI color vars are in hsl!
 
 :root {
+    //background-color: hsl(var(--nextui-background));
+    background-image: linear-gradient(to right top, #050b26, #050b26, #050b26, #050b26, #050b26, #050c27, #060c29, #060d2a, #070e2d, #071030, #081133, #091236);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    color: hsl(var(--nextui-foreground));
+    //color-scheme: light dark;
     font-family: "Mulish", Avenir, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-size: 16px;
     font-style: normal;
+    font-synthesis: none;
     font-weight: 400;
     line-height: 1.5;
-
-    //color-scheme: light dark;
-    color: hsl(var(--nextui-foreground));
-    background-color: hsl(var(--nextui-background));
-
-    font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
