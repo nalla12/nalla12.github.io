@@ -8,8 +8,6 @@ interface AccordionData {
     title: string,
     subtitle: string,
     content: ReactNode
-    // eslint-disable-next-line  @typescript-eslint/no-explicit-any
-    // content: (props: any) => ReactElement
 }
 export default function MenuAccordion({data}: {data: AccordionData[]}) {
     const motionProps = {
@@ -71,6 +69,11 @@ export default function MenuAccordion({data}: {data: AccordionData[]}) {
                     }}
                     disableIndicatorAnimation={true}
                     indicator={({ isOpen }) => (isOpen ? <BiMinus /> : <BiPlus />)}
+                    onPress={(e) => {
+                        setTimeout(() => {
+                            e.target.scrollIntoView({behavior: 'smooth'});
+                        }, 200)
+                    }}
                 >
                     {/*<item.content />*/}
                     {item.content}
