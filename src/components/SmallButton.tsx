@@ -1,11 +1,26 @@
 import {Button, Tooltip} from '@nextui-org/react';
 import {ReactNode} from 'react';
 
-export default function SmallButton({children}: {children: ReactNode}) {
+interface Props {
+    onPress?: () => void,
+    highlight?: boolean,
+    toolTip?: string,
+    children: ReactNode
+}
+export default function SmallButton(props: Props) {
+    const highlight = props.highlight ? 'true' : 'false';
+
     return (
-        <Tooltip content='Does not work yet'>
-            <Button color="secondary" variant="light" size='sm' isIconOnly>
-                {children}
+        <Tooltip content={props.toolTip}>
+            <Button
+                color="secondary"
+                variant="light"
+                size='sm'
+                isIconOnly
+                data-hover={highlight}
+                onPress={props.onPress}
+            >
+                {props.children}
             </Button>
         </Tooltip>
     )

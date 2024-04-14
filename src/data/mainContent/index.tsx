@@ -13,7 +13,7 @@ import Project from '@/components/Project.tsx';
 import ResponsiveGrid from '@/components/ResponsiveGrid.tsx';
 
 export default {
-    da: [
+    'da': [
         {
             title: WhoContentDa.meta.title,
             subtitle: WhoContentDa.meta.subtitle,
@@ -35,7 +35,7 @@ export default {
             content: <WhereContentDa.default />
         }
     ],
-    en: [
+    'en': [
         {
             title: WhoContentEn.meta.title,
             subtitle: WhoContentEn.meta.subtitle,
