@@ -1,6 +1,6 @@
 import {ReactNode} from 'react';
 import {Accordion, AccordionItem} from '@nextui-org/react';
-import styles from '../styles/app.module.scss';
+import styles from '../styles/menuAccordion.module.scss';
 import { BiPlus } from 'react-icons/bi';
 import { BiMinus } from 'react-icons/bi';
 

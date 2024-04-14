@@ -8,7 +8,7 @@ import * as WhatContentEn from './en/What.mdx';
 import * as WhereContentEn from './en/Where.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
 import Dots from '@/components/Dots.tsx';
-import Rating from '@/components/Pill.tsx';
+import Rating from '@/components/Rating.tsx';
 import Project from '@/components/Project.tsx';
 import ResponsiveGrid from '@/components/ResponsiveGrid.tsx';
 

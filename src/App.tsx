@@ -1,6 +1,6 @@
 import Header from './components/Header.tsx';
 import MenuAccordion from './components/MenuAccordion.tsx';
-import mainContent from './data/mainContent';
+import mainContent from '@/content/mainContent';
 import {useState} from 'react';
 
 function App({className}: {className: string}) {
