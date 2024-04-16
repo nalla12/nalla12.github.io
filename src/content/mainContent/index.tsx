@@ -44,12 +44,12 @@ export default {
         {
             title: WhichContentEn.meta.title,
             subtitle: WhichContentEn.meta.subtitle,
-            content: <WhichContentEn.default />
+            content: <WhichContentEn.default components={{Rating, Dots}} />
         },
         {
             title: WhatContentEn.meta.title,
             subtitle: WhatContentEn.meta.subtitle,
-            content: <WhatContentEn.default />
+            content: <WhatContentEn.default components={{Project, ResponsiveGrid}} />
         },
         {
             title: WhereContentEn.meta.title,

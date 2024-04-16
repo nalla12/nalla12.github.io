@@ -10,14 +10,14 @@ export default function Header(props: Props) {
             <SmallButton
                 highlight={props.lang === 'da'}
                 onPress={() => props.changeLang('da')}
-                toolTip='Change to Danish'
+                toolTip={props.lang === 'da' ? 'Change to Danish' : 'Skift til dansk'}
             >
                 DA
             </SmallButton>
             <SmallButton
                 highlight={props.lang === 'en'}
                 onPress={() => props.changeLang('en')}
-                toolTip='Change to English'
+                toolTip={props.lang === 'da' ? 'Change to English' : 'Skift til engelsk'}
             >
                 EN
             </SmallButton>
