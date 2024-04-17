@@ -1,60 +1,61 @@
-import * as WhoContentDa from './da/Who.mdx';
-import * as WhichContentDa from './da/Which.mdx';
-import * as WhatContentDa from './da/What.mdx';
-import * as WhereContentDa from './da/Where.mdx';
-import * as WhoContentEn from './en/Who.mdx';
-import * as WhichContentEn from './en/Which.mdx';
-import * as WhatContentEn from './en/What.mdx';
-import * as WhereContentEn from './en/Where.mdx';
+import * as AboutDa from './da/About.mdx';
+import * as SkillsDa from './da/Skills.mdx';
+import * as ProjectsDa from './da/Projects.mdx';
+import * as ContactDa from './da/Contact.mdx';
+import * as AboutEn from './en/About.mdx';
+import * as SkillsEn from './en/Skills.mdx';
+import * as ProjectsEn from './en/Projects.mdx';
+import * as ContactEn from './en/Contact.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
 import Dots from '@/components/Dots.tsx';
 import Rating from '@/components/Rating.tsx';
 import Project from '@/components/Project.tsx';
 import ResponsiveGrid from '@/components/ResponsiveGrid.tsx';
 
+const comps = {Rating, Dots, Project, ResponsiveGrid};
 export default {
     'da': [
         {
-            title: WhoContentDa.meta.title,
-            subtitle: WhoContentDa.meta.subtitle,
-            content: <WhoContentDa.default pdfUrl={pdfUrl} />
+            title: AboutDa.meta.title,
+            subtitle: AboutDa.meta.subtitle,
+            content: <AboutDa.default pdfUrl={pdfUrl} />
         },
         {
-            title: WhichContentDa.meta.title,
-            subtitle: WhichContentDa.meta.subtitle,
-            content: <WhichContentDa.default components={{Rating, Dots}} />
+            title: SkillsDa.meta.title,
+            subtitle: SkillsDa.meta.subtitle,
+            content: <SkillsDa.default components={comps} />
         },
         {
-            title: WhatContentDa.meta.title,
-            subtitle: WhatContentDa.meta.subtitle,
-            content: <WhatContentDa.default components={{Project, ResponsiveGrid}} />
+            title: ProjectsDa.meta.title,
+            subtitle: ProjectsDa.meta.subtitle,
+            content: <ProjectsDa.default components={comps} />
         },
         {
-            title: WhereContentDa.meta.title,
-            subtitle: WhereContentDa.meta.subtitle,
-            content: <WhereContentDa.default />
+            title: ContactDa.meta.title,
+            subtitle: ContactDa.meta.subtitle,
+            content: <ContactDa.default />
         }
     ],
     'en': [
         {
-            title: WhoContentEn.meta.title,
-            subtitle: WhoContentEn.meta.subtitle,
-            content: <WhoContentEn.default />
+            title: AboutEn.meta.title,
+            subtitle: AboutEn.meta.subtitle,
+            content: <AboutEn.default />
         },
         {
-            title: WhichContentEn.meta.title,
-            subtitle: WhichContentEn.meta.subtitle,
-            content: <WhichContentEn.default components={{Rating, Dots}} />
+            title: SkillsEn.meta.title,
+            subtitle: SkillsEn.meta.subtitle,
+            content: <SkillsEn.default components={comps} />
         },
         {
-            title: WhatContentEn.meta.title,
-            subtitle: WhatContentEn.meta.subtitle,
-            content: <WhatContentEn.default components={{Project, ResponsiveGrid}} />
+            title: ProjectsEn.meta.title,
+            subtitle: ProjectsEn.meta.subtitle,
+            content: <ProjectsEn.default components={comps} />
         },
         {
-            title: WhereContentEn.meta.title,
-            subtitle: WhereContentEn.meta.subtitle,
-            content: <WhereContentEn.default />
+            title: ContactEn.meta.title,
+            subtitle: ContactEn.meta.subtitle,
+            content: <ContactEn.default />
         }
     ]
 }

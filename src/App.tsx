@@ -1,7 +1,7 @@
+import {useState} from 'react';
 import Header from './components/Header.tsx';
 import MenuAccordion from './components/MenuAccordion.tsx';
 import mainContent from '@/content/mainContent';
-import {useState} from 'react';
 
 function App({className}: {className: string}) {
     const [lang, setLang] = useState<'da' | 'en'>('da');
