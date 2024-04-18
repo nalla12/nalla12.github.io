@@ -7,6 +7,7 @@ import * as SkillsEn from './en/Skills.mdx';
 import * as ProjectsEn from './en/Projects.mdx';
 import * as ContactEn from './en/Contact.mdx';
 import pdfUrl from '@/assets/allan-duong-cv.pdf';
+import pdfUrlEn from '@/assets/allan-duong-cv-english.pdf';
 import Dots from '@/components/Dots.tsx';
 import Rating from '@/components/Rating.tsx';
 import Project from '@/components/Project.tsx';
@@ -40,7 +41,7 @@ export default {
         {
             title: AboutEn.meta.title,
             subtitle: AboutEn.meta.subtitle,
-            content: <AboutEn.default />
+            content: <AboutEn.default pdfUrl={pdfUrlEn} />
         },
         {
             title: SkillsEn.meta.title,
