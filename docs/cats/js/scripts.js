@@ -1,15 +1,18 @@
-const catImage =
-    '<img alt="A random cat" src="https://cataas.com/cat/gif"/>';
+const catImage = () => {
+    const imgSrc = `https://cataas.com/cat/gif?uId=${Math.floor(Math.random() * 10000)}`;
+    return `<img alt="A random cat" src=${imgSrc} onclick="replaceCat()" />`;
+};
 
 const cat = $('#cat');
 
 $(document).ready(() => {
-
-    cat.append(catImage).on('click', () => {
-        $('#cat > img').replaceWith(catImage);
-    })
-
+    cat.append(catImage());
 })
+
+function replaceCat() {
+    console.log('Cat clicked!');
+    $('#cat > img').replaceWith(catImage());
+}
 
 function hideCat() {
     cat.hide()
