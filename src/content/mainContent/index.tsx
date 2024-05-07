@@ -35,7 +35,7 @@ export default {
         {
             title: ContactDa.meta.title,
             subtitle: ContactDa.meta.subtitle,
-            content: <ContactDa.default />
+            content: <ContactDa.default components={{Link}} />
         }
     ],
     'en': [
@@ -57,7 +57,7 @@ export default {
         {
             title: ContactEn.meta.title,
             subtitle: ContactEn.meta.subtitle,
-            content: <ContactEn.default />
+            content: <ContactEn.default components={{Link}} />
         }
     ]
 }
