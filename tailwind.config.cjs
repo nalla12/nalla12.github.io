@@ -21,7 +21,7 @@ module.exports = {
                         background: '#050b26',
                         foreground: '#FFFFFFDD',
                         link: '#64b9ff',
-                        primary: '#eea44a',
+                        primary: '#d39141',
                         secondary: '#ce8c19'
                     }
                 },
@@ -30,7 +30,7 @@ module.exports = {
                         background: '#050a1f',
                         foreground: '#FFFFFFDD',
                         link: '#64b9ff',
-                        primary: '#eea44a',
+                        primary: '#d39141',
                         secondary: '#ce8c19'
                     }
                 }
