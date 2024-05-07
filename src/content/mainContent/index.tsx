@@ -12,8 +12,9 @@ import Dots from '@/components/Dots.tsx';
 import Rating from '@/components/Rating.tsx';
 import Project from '@/components/Project.tsx';
 import ResponsiveGrid from '@/components/ResponsiveGrid.tsx';
+import {Link} from '@nextui-org/link';
 
-const comps = {Rating, Dots, Project, ResponsiveGrid};
+const comps = {Rating, Dots, Project, ResponsiveGrid, Link};
 export default {
     'da': [
         {
