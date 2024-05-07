@@ -3,6 +3,7 @@ import {Accordion, AccordionItem} from '@nextui-org/react';
 import styles from '../styles/menuAccordion.module.scss';
 import { BiPlus } from 'react-icons/bi';
 import { BiMinus } from 'react-icons/bi';
+import {motionProps} from '@/configs/motionProps.ts';
 
 interface AccordionData {
     title: string,
@@ -10,48 +11,11 @@ interface AccordionData {
     content: ReactNode
 }
 export default function MenuAccordion({data}: {data: AccordionData[]}) {
-    const motionProps = {
-        variants: {
-            enter: {
-                y: 0,
-                opacity: 1,
-                height: 'auto',
-                transition: {
-                    height: {
-                        type: 'spring',
-                        stiffness: 500,
-                        damping: 30,
-                        duration: 1.5,
-                    },
-                    opacity: {
-                        easings: 'ease',
-                        duration: 1,
-                    },
-                },
-            },
-            exit: {
-                y: -20,
-                opacity: 0,
-                height: 0,
-                transition: {
-                    height: {
-                        easings: 'ease',
-                        duration: 0.25,
-                    },
-                    opacity: {
-                        easings: 'ease',
-                        duration: 0.3,
-                    },
-                },
-            },
-        }
-    };
-
     return (
         <Accordion
             className='max-w-full mx-auto p-0'
             keepContentMounted={true}
-            motionProps={motionProps}
+            motionProps={motionProps.menuAccordion}
             showDivider={false}
         >
             {data.map((item, index) => (
