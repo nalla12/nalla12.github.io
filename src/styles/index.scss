@@ -45,13 +45,14 @@ main {
 }
 
 a {
+    border-bottom: 1px solid transparent;
     color: hsl(var(--nextui-primary));
     font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 1px solid;
+    border-bottom-color: theme('colors.blue.300');
     color: theme('colors.blue.300');
 }
 
