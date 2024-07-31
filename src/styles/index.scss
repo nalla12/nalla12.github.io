@@ -91,6 +91,10 @@ ul {
     padding: revert;
 }
 
+.color-primary {
+    color: hsl(var(--nextui-primary));
+}
+
 /*
 @media (prefers-color-scheme: light) {
     :root {
