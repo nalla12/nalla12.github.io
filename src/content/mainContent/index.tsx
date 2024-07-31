@@ -3,6 +3,7 @@ import * as AboutDa from './da/About.mdx';
 import * as SkillsDa from './da/Skills.mdx';
 import * as ProjectsDa from './da/Projects.mdx';
 import * as ContactDa from './da/Contact.mdx';
+import * as IntroEn from './en/Intro.mdx';
 import * as AboutEn from './en/About.mdx';
 import * as SkillsEn from './en/Skills.mdx';
 import * as ProjectsEn from './en/Projects.mdx';
@@ -41,9 +42,9 @@ export const introContent: IntroContent = {
         content: <IntroDa.default pdfUrl={pdfUrl} />
     },
     en: {
-        title: IntroDa.meta.title,
-        subtitle: IntroDa.meta.subtitle,
-        content: <IntroDa.default pdfUrl={pdfUrl} />
+        title: IntroEn.meta.title,
+        subtitle: IntroEn.meta.subtitle,
+        content: <IntroEn.default pdfUrl={pdfUrlEn} />
     },
 };
 
