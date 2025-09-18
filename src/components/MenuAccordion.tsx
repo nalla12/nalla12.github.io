@@ -13,7 +13,7 @@ interface AccordionData {
 export default function MenuAccordion({data}: {data: AccordionData[]}) {
     return (
         <Accordion
-            defaultExpandedKeys={["0"]}
+            defaultExpandedKeys={['0']}
             className='max-w-full mx-auto p-0'
             keepContentMounted={true}
             motionProps={motionProps.menuAccordion}
